@@ -1,0 +1,3 @@
+method,n_clusters,noise_%,silhouette,ARI_vs_class,NMI_vs_class
+K-Means,4,0.0,0.3095,0.0213,0.0795
+DBSCAN,7,5.23,0.1528,0.7223,0.5581

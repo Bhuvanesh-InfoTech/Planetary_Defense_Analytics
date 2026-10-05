@@ -1,0 +1,16 @@
+numpy
+pandas
+scipy
+scikit-learn>=1.3
+imbalanced-learn
+xgboost
+shap
+mlflow
+matplotlib
+seaborn
+plotly
+joblib
+pyarrow
+streamlit
+jupyter
+nbformat

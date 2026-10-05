@@ -1,0 +1,10 @@
+step,rows_before,rows_after,action
+raw load,958524,958524,-
+duplicates,958524,958524,drop exact duplicates and repeated full_name (keep first)
+hyperbolic orbits,958524,958520,drop e>=1 or a<=0
+"albedo not in (0,1]",958520,958520,0 values -> NaN
+diameter <= 0,958520,958520,0 values -> NaN
+"H not in [0,35]",958520,958520,3 values -> NaN
+case1 rows,958520,938599,pha labelled & H present
+case2 rows,958520,132045,diameter & H present
+case3 rows,958520,958520,all bound orbits

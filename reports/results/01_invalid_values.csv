@@ -1,0 +1,14 @@
+,violations
+e < 0,0
+e >= 1 (hyperbolic/parabolic),4
+a <= 0,4
+a < 0 while e < 1,0
+q <= 0,0
+"i outside [0, 180]",0
+"om outside [0, 360]",0
+"w outside [0, 360]",0
+"ma outside [0, 360]",95
+H < 0 or H > 35,3
+diameter <= 0,0
+"albedo outside [0, 1]",0
+moid < 0,0

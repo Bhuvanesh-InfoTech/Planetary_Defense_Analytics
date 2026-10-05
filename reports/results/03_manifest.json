@@ -1,0 +1,91 @@
+{
+  "seed": 42,
+  "files": {
+    "case1": "case1_pha.parquet",
+    "case2": "case2_diameter.parquet",
+    "case3": "case3_orbits.parquet"
+  },
+  "transforms": {
+    "a": "log10",
+    "q": "log10",
+    "ad": "log10",
+    "per_y": "log10",
+    "n": "cbrt",
+    "e": "cbrt",
+    "i": "cbrt",
+    "H": "sqrt",
+    "albedo": "log10"
+  },
+  "feature_sets": {
+    "case1_A_noH": [
+      "q_tr",
+      "e_tr",
+      "a_tr",
+      "ad_tr",
+      "i_tr",
+      "ma_cos",
+      "w_cos",
+      "w_sin",
+      "ma_sin"
+    ],
+    "case1_B_withH": [
+      "q_tr",
+      "e_tr",
+      "a_tr",
+      "H_tr",
+      "ad_tr",
+      "i_tr",
+      "ma_cos",
+      "w_sin"
+    ],
+    "case2_A_noAlbedo": [
+      "H_tr",
+      "a_tr",
+      "q_tr",
+      "ad_tr",
+      "i_tr",
+      "e_tr",
+      "ma_sin",
+      "om_sin",
+      "ma_cos"
+    ],
+    "case2_B_withAlbedo": [
+      "H_tr",
+      "albedo_tr",
+      "a_tr",
+      "q_tr",
+      "ad_tr",
+      "i_tr",
+      "e_tr",
+      "ma_cos",
+      "ma_sin"
+    ],
+    "case3_core": [
+      "a_tr",
+      "e_tr",
+      "i_tr"
+    ],
+    "case3_with_angles": [
+      "a_tr",
+      "e_tr",
+      "i_tr",
+      "om_sin",
+      "om_cos",
+      "w_sin",
+      "w_cos",
+      "ma_sin",
+      "ma_cos"
+    ]
+  },
+  "targets": {
+    "case1": "y_pha",
+    "case2": "log_diameter (log10 km)"
+  },
+  "split_column": "split (train/test, decided in 03)",
+  "excluded_from_case1": [
+    "moid",
+    "moid_ld",
+    "neo",
+    "class"
+  ]
+}
